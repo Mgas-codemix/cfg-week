@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Thank you!</title>
+
+
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+ <link rel="stylesheet" href= "FormConfirmationPage.css">
+
+ 
+ 
+ <body>
+  <header id="header" class="header-main">
+
+<div class="container1 lime pullUp">
+    <a href="index.html">| Home |</a>
+      <a href="SecondPage.html">| The Chef Cuisine |</a>
+      <a href="ContactUsPage.html">| Contact us |</a>
+        </div>
+
+      </header>
+      <div class="w3-display-container" text >
+    
+        <div class="w3-container w3-amber w3-hover-orange w3-hide-small"
+         style="opacity:0.7; width:100%; text-align:center;" >
+    <h1> Thank you! </h1> <br />
+        </div>
+
+          <script>
+              
+            const getString = window.location.search;
+            console.log(getString);
+            const urlParam = new URLSearchParams(getString);
+            const name = urlParam.get('name')
+            console.log(name);
+
+            const getString2 = window.location.search;
+            console.log(getString2);
+            const urlParam2 = new URLSearchParams(getString2);
+            const Country = urlParam2.get('Country')
+            console.log(Country); 
+                                          
+                        </script>
+
+
+            <div class="ThankYou"></div>
+
+            
+        <p> Thank you for getting in touch! </br><br>
+
+             We appreciate you contacting us <script>document.write(`${name}`+ " from " +`${ Country}`+".")</script></br></br>
+                        
+            Have a great day!</p></br></br>
+
+
+            <img class="tick" src="images\Tick.gif" alt="Tick">
+           </div>
+          </body>
+          <footer><p id="footer">&copy; 2020 - A Marica & Reena Production 🍕</p></div>
+        </footer>
+
+ 
+ </html>
